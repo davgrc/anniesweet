@@ -1,0 +1,31 @@
+/* Responsive especial para móviles */
+@media (max-width: 768px) {
+  /* Ajusta el viewport para que no se vea alejado */
+  body {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Contenedor del dashboard */
+  .dashboard {
+    display: grid;                 /* usamos grid para controlar filas/columnas */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 12px;                     /* espacio entre tarjetas */
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* Cada tarjeta del dashboard */
+  .dashboard .card {
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+/* Para pantallas muy pequeñas (teléfonos compactos) */
+@media (max-width: 480px) {
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas si el ancho es muy reducido */
+  }
+}
