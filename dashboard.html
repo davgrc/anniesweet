@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Annie's Sweet</title>
+  <!-- ============================
+       BLOQUE: Hojas de estilo
+  ============================ -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stats.css">
+</head>
+<body>
+  <!-- ============================
+       BLOQUE: Barra de navegación superior
+  ============================ -->
+  <nav class="navbar">
+    <button id="menuToggle">☰</button>
+    <h1 class="navbar-title">Annie's Sweet</h1>
+    <a href="index.html" class="logout-btn">Cerrar sesión</a>
+  </nav>
+
+  <!-- ============================
+       BLOQUE: Menú lateral
+  ============================ -->
+  <aside id="sideMenu">
+    <ul class="menu-list">
+      <li><a href="dashboard.html">Inicio</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="estadisticas.html">Estadísticas</a></li>
+      <li><a href="ajustes.html">Ajustes</a></li>
+    </ul>
+  </aside>
+
+  <!-- ============================
+       BLOQUE: Contenido principal
+  ============================ -->
+  <main class="main-content">
+    <!-- ============================
+         BLOQUE: Encabezado del dashboard
+    ============================ -->
+    <section class="dashboard-header">
+      <h2>Bienvenido</h2>
+      <p>Usa los botones inferiores como una app de gestión.</p>
+    </section>
+
+    <!-- ============================
+         BLOQUE: Tarjetas de estadísticas
+    ============================ -->
+    <section id="stats" class="stats-grid">
+      <!-- En espera -->
+      <article class="stat-card">
+        <div class="icon">🕒</div>
+        <div class="number" id="statEspera">0</div>
+        <div class="label">En espera</div>
+      </article>
+
+      <!-- Activos -->
+      <article class="stat-card">
+        <div class="icon">📦</div>
+        <div class="number" id="statActivos">0</div>
+        <div class="label">Activos</div>
+      </article>
+
+      <!-- Finalizados -->
+      <article class="stat-card">
+        <div class="icon">✅</div>
+        <div class="number" id="statFinalizados">0</div>
+        <div class="label">Finalizados</div>
+      </article>
+
+      <!-- Eliminados -->
+      <article class="stat-card">
+        <div class="icon">🗑️</div>
+        <div class="number" id="statEliminados">0</div>
+        <div class="label">Eliminados</div>
+      </article>
+
+      <!-- Pagados -->
+      <article class="stat-card">
+        <div class="icon">💰</div>
+        <div class="number" id="statPagados">0</div>
+        <div class="label">Pagados</div>
+      </article>
+
+      <!-- Por pagar -->
+      <article class="stat-card">
+        <div class="icon">⚠️</div>
+        <div class="number" id="statPorPagar">0</div>
+        <div class="label">Por pagar</div>
+      </article>
+    </section>
+
+    <!-- ============================
+         BLOQUE: Botón reiniciar
+    ============================ -->
+    <section class="dashboard-actions">
+      <button id="resetStatsBtn">Reiniciar estadísticas</button>
+    </section>
+  </main>
+
+  <!-- ============================
+       BLOQUE: Botones inferiores (nav fijo)
+  ============================ -->
+  <div class="bottom-nav">
+    <button id="nuevoBtn">Nuevo</button>
+    <button id="registroBtn">☰</button>
+    <button id="pedidosBtn">Pedidos</button>
+  </div>
+
+  <!-- ============================
+       BLOQUE: Scripts
+  ============================ -->
+  <script src="js/stats.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* ============================
+   BLOQUE: Layout general
+============================ */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+main.main-content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ============================
+   BLOQUE: Encabezados
+============================ */
+h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* ============================
+   BLOQUE: Formulario de cliente
+============================ */
+#clienteForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#clienteForm input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+#clienteForm input:focus {
+  border-color: #0078d7;
+  outline: none;
+}
+
+#clienteForm button {
+  padding: 10px;
+  background: #0078d7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#clienteForm button:hover {
+  background: #005fa3;
+}
+
+/* ============================
+   BLOQUE: Lista de clientes
+============================ */
+#listaClientes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#listaClientes li {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#listaClientes li strong {
+  color: #333;
+  font-size: 15px;
+}
+
+#listaClientes li small {
+  color: #666;
+  font-size: 13px;
+}
+
+#listaClientes li .deleteBtn {
+  align-self: flex-start;
+  padding: 6px 12px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#listaClientes li .deleteBtn:hover {
+  background: #b02a37;
+}
+
+
+#nuevoBtn { background: #0078d7; color: #fff; }
+#registroBtn { background: #e83e8c; color: #fff; }
+#pedidosBtn { background: #ffc107; color: #333; }
+
+#nuevoBtn:hover { background: #005fa3; }
+#registroBtn:hover { background: #c71c6f; }
+#pedidosBtn:hover { background: #e0a800; }
+
+/* ============================
+   BLOQUE: Tarjetas de clientes
+============================ */
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.cliente-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cliente-card:hover {
+  transform: translateY(-3px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cliente-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #0078d7;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.card-details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-details button.deleteBtn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.card-details button.deleteBtn:hover {
+  background: #b02a37;
+}

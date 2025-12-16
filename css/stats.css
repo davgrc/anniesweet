@@ -1,0 +1,79 @@
+/* ============================
+   BLOQUE: Layout general
+============================ */
+.main-content {
+  padding: 16px;                /* respiración general */
+  padding-bottom: 88px;         /* evita solaparse con bottom-nav fijo */
+}
+
+.dashboard-header h2 {
+  margin-bottom: 6px;           /* reduce espacio bajo el título */
+}
+
+.dashboard-header p {
+  margin-bottom: 8px;           /* texto más compacto */
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ============================
+   BLOQUE: Grilla de estadísticas
+============================ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* grilla responsiva */
+  gap: 0.8rem;                          /* espacio entre tarjetas */
+  margin-top: 6px;                      /* menos separación arriba */
+  margin-bottom: 12px;                  /* separación antes del botón */
+}
+
+.stat-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover { transform: translateY(-2px); }
+
+.stat-card .icon {
+  font-size: 1.4rem;                    /* ícono compacto */
+  margin-bottom: 6px;
+}
+
+.stat-card .number {
+  font-size: 1.4rem;                    /* número equilibrado */
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.stat-card .label {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ============================
+   BLOQUE: Botón Reiniciar
+============================ */
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+}
+
+#resetStatsBtn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s ease;
+}
+
+#resetStatsBtn:hover { background: #b02a37; }
+
